@@ -1,0 +1,104 @@
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: white !important;
+    background: #007bff !important;
+    font-weight: bold !important;
+}
+
+table.dataTable tbody td {
+    white-space: nowrap !important;
+    font-size: 15px !important;
+}
+
+#tbl_productos thead th{
+    white-space: nowrap !important;
+}
+
+.addNewRecord{
+    background-color: #198754 !important;
+    color: white !important;
+}
+
+.buttons-excel{
+    background-color: #0d6efd !important;
+    color: white !important;
+}
+
+.buttons-print{
+    background-color: #ffc107 !important;
+    color: white !important;
+}
+
+.dt-button{
+    padding-top: 5px  !important;
+    padding-bottom: 5px !important;
+}
+
+#tbl_productos tbody tr td{
+    padding: 3px !important;
+}
+
+.transparentbar {
+    background-repeat:no-repeat;
+    cursor:pointer;
+    outline:none;
+    border:none;
+    box-shadow:none; 
+    background-image: none;  
+    background-color: transparent;
+  
+  }
+  
+  .btn-check:focus+.btn-primary, .btn-primary:focus {
+    color: #fff;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+  }
+  
+  .transparentbar:hover {
+    color: #fff;
+    background-color: transparent !important;
+    border-color: transparent !important;
+  }
+
+  .dataTables_wrapper .dataTables_paginate .paginate_button {
+    border-radius: 50%;
+  }
+  
+  div.dataTables_wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card-gray{
+  border: 1px solid gray;
+}
+
+.card-header{
+  border-bottom: 1px solid gray;
+}
+
+#tbl_productos_mas_vendidos tbody tr td, #tbl_productos_poco_stock tbody tr td{
+  padding: 3px !important;
+}
+
+.small-box {
+  border: 1px solid gray !important;
+}
+
+.content-header h2{
+  font-family: 'Kalam', cursive; 
+  font-weight: bold;
+}
+
+.card-header { 
+  padding: 0.4rem 1.25rem !important;
+}
+
+.form-control, select{
+  border: 1px solid gray !important;
+}
+
+.input-group>.input-group-append>.btn, .input-group>.input-group-append>.input-group-text, .input-group>.input-group-prepend:first-child>.btn:not(:first-child), .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child), .input-group>.input-group-prepend:not(:first-child)>.btn, .input-group>.input-group-prepend:not(:first-child)>.input-group-text { 
+  border: 1px solid gray !important;
+}
