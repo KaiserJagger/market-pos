@@ -490,7 +490,7 @@
         ============================================================= */
         $("#asignar_modulos").on('click', function() {
 
-            alert("entro al evento")
+            // alert("entro al evento")
             selectedElmsIds = []
             let selectedElms = $('#modulos').jstree("get_selected", true);
 
@@ -845,7 +845,7 @@
             success: function(respuesta) {
 
                 dataSource = respuesta;
-                console.log("🚀 ~ file: modulos_perfiles.php ~ line 793 ~ fnCargarArbolModulos ~ dataSource", dataSource)
+                // console.log("🚀 ~ file: modulos_perfiles.php ~ line 793 ~ fnCargarArbolModulos ~ dataSource", dataSource)
             }
         });
 
@@ -905,12 +905,12 @@
             'flat': true
         });
 
-        console.log("🚀 ~ file: modulos_perfiles.php ~ line 1074 ~ fnOrganizarModulos ~ v", v)
+        // console.log("🚀 ~ file: modulos_perfiles.php ~ line 1074 ~ fnOrganizarModulos ~ v", v)
 
         for (i = 0; i < v.length; i++) {
 
             let z = v[i];
-            console.log("🚀 ~ file: modulos_perfiles.php ~ line 871 ~ fnOrganizarModulos ~ z", z)
+            // console.log("🚀 ~ file: modulos_perfiles.php ~ line 871 ~ fnOrganizarModulos ~ z", z)
 
             //asignamos el id, el padre Id y el nombre del modulo
             reg_id = z["id"];
@@ -923,7 +923,7 @@
 
 
 
-        console.log("🚀 ~ file: modulos_perfiles.php ~ line 713 ~ $ ~ array_modulos", array_modulos)
+        // console.log("🚀 ~ file: modulos_perfiles.php ~ line 713 ~ $ ~ array_modulos", array_modulos)
 
         /*REGISTRAMOS LOS MODULOS CON EL NUEVO ORDENAMIENTO */
         $.ajax({
@@ -979,7 +979,7 @@
 
             if (form.checkValidity() === true) {
 
-                console.log("Listo para registrar el producto");
+                // console.log("Listo para registrar el producto");
 
                 Swal.fire({
                     title: 'Está seguro de registrar el producto?',
@@ -1006,7 +1006,7 @@
                             dataType: 'json',
 						    success: function(respuesta) {
 
-							    console.log("🚀 ~ file: modulos_perfiles.php ~ line 1240 ~ validation ~ respuesta", respuesta)
+							    // console.log("🚀 ~ file: modulos_perfiles.php ~ line 1240 ~ validation ~ respuesta", respuesta)
 
                                 Swal.fire({
                                     position: 'center',

@@ -34,12 +34,12 @@ class UsuarioModelo{
     static public function mdlObtenerMenuUsuario($id_usuario){
 
         $stmt = Conexion::conectar()->prepare("SELECT m.id,m.modulo,m.icon_menu,m.vista,pm.vista_inicio
-                                                from usuarios u inner join perfiles p on u.id_perfil_usuario = p.id_perfil
-                                                inner join perfil_modulo pm on pm.id_perfil = p.id_perfil
-                                                inner join modulos m on m.id = pm.id_modulo
-                                                where u.id_usuario = :id_usuario
-                                                and (m.padre_id is null or m.padre_id = 0)
-                                                order by m.orden");
+                                                        from usuarios u inner join perfiles p on u.id_perfil_usuario = p.id_perfil
+                                                        inner join perfil_modulo pm on pm.id_perfil = p.id_perfil
+                                                        inner join modulos m on m.id = pm.id_modulo
+                                                        where u.id_usuario = :id_usuario
+                                                        and (m.padre_id is null or m.padre_id = 0)
+                                                        order by m.orden");
 
         $stmt->bindParam(":id_usuario", $id_usuario, PDO::PARAM_STR);
 
